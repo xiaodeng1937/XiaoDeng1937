@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>GG</title>
+    <!--外部样式表-->
+    <link rel="stylesheet" type="text/css" href="CSS.css" />
+    
+    <!--内部样式表-->
+    <script>
+        var eg = {};
+        eg.$ = function (id) {
+            return document.getElementById(id);
+        };
+        eg.regCheck = function () {
+            var uid = eg.$("user");
+            var upd1 = eg.$("user1");
+            var upd2 = eg.$("user2");
+            if (uid.value == "") {
+                alert("无法");
+                return false;
+            }
+            if (upd1.value == "") {
+                alert("密码不能为空");
+                return false;
+            }
+            if (upd1.value != upd2.value) {
+                alert("密码不一样!");
+                return false;
+            }
+            return true;
+        };
+       
+      
+    </script>
+    <style>
+        p{
+          background-color:green;
+          width:100%;
+          height:50px;
+          margin:-8px auto;
+          float:left;
+        }
+        li{color:fuchsia}
+        h4{color:blueviolet}
+        .hs{color:forestgreen;
+            text-align:center;
+            width:500px;
+            height:500px;
+            background-color:#eee;
+            margin:0 auto;
+            border:5px solid blue;
+            border-radius:300px;
+            box-shadow:5px 5px 10px #000;
+            border-top-style:dashed;
+           background-image:url("D:/风景.jpg")
+        }
+        #M24{color:black;
+            font-family:华文行楷;
+             font-size:150px;
+             text-align:center;
+             font-weight:lighter;
+             font-style:italic;
+             margin:0 auto;
+             border-width:5px;
+             border-color:aqua;
+             border-style:dotted;
+             border-radius:10px;
+             box-shadow:5px 5px 5px #000;
+
+        }
+        .juzhong{
+           
+            background-repeat:no-repeat;
+            background-position:center center;
+        }
+        
+        .dvi1{
+            background-image:url("1.png");
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+          width:100%;
+          height:500px;
+          margin:-8px auto;
+          text-align:center;
+          line-height:50px;
+          font-size:40px;
+          color:white;
+         
+        }
+        .div2{
+            background-color:aquamarine;
+            width:19.8%;
+            height:50px;
+            float:left;
+            border:1px solid #fff;
+        }
+        
+        .div2:hover{
+            background-color:yellow;
+            cursor:pointer;
+            color:green;
+           border:1px solid #000;
+        }
+    </style>
+    </head>
+<body bgcolor="#FFCOAO">
+    <div id="M24">M24</div>
+
+    <div>18高技</div>
+    <div class="hs juzhong">98K</div>
+    <h4>各科小常识</h4>
+    <hr/>
+    <h4><strong>语文</strong></h4>
+    <!--内联样式表-->
+    <p style="color:aqua;"> &nbsp; &nbsp;《三国演义》中国古典四大名著之一，元末明初小说家罗贯中所著，是中国第一部长篇章回体历史演义小说。<br />描写了从东汉末年到西晋初年之间近100年的历史风云。</p>
+    <hr/>
+    <h4><strong>数学</strong></h4>
+    <p>勾股定理直角三角形:a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup>。</p>
+    <hr/>
+    <h4><strong>英语</strong></h4>   
+     
+    <p>Can't speak English.</p>
+    <hr/>
+        <h4><strong>化学</strong></h4>
+        <p>H<sup>2</sup>O是水，是人必不可少的物质</p>
+        <p>制作氧气化学方程式:KMnO<sub>4</sub>=MnO<sub>4</sub>+MnO<sub>2</sub>+O<sub>2</sub>↑</p>
+    <hr/>
+    <h4><strong>经济</strong></h4>
+    <p>版权符号:&copy;</p><p>注册商标:&reg;</p><p>欧元符号:&euro;</p><p>英镑符号:&pound;</p>
+    <p>六</p>
+    <p><s>原价:$6</s></p>
+    <p><strong>现在:$10</strong></p>
+    <hr />
+    <freemake></freemake>
+    <h2>绿叶学习问卷调查</h2>
+    <p><strong>你通过什么途径来到绿叶学习网?</strong></p>
+    <ol type="1">
+        <li>百度搜索</li>
+        <li>360搜索</li>
+        <li>其他</li>
+    </ol>
+    <p><strong>你觉得绿叶学习网页面设计怎么样？</strong></p>
+
+    <ol type="1">
+        <li>美观</li>
+        <li>粗糙</li>
+        <li>还行</li>
+    </ol>
+    <p><strong>绿叶学习网的"HTML入门课程"如何?(多选)</strong></p>
+    <ul type="square">
+
+        <li>浅显易懂,重点突出</li>
+        <li>内容丰富，技巧很多</li>
+        <li>一句话，非常喜欢！</li>
+
+    </ul>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>制作网页的标准语言，控制网页的结构</dd>
+    </dl>
+    <br />
+    <table>
+        <tr>
+            <td colspan="2">绿叶学习网精品教程</td>
+        </tr>
+        <tr>
+            <td>喜欢</td>
+            <td>苹果</td>
+        </tr>
+        <tr>
+            <td>香蕉</td>
+            <td>小明</td>
+        </tr>
+    </table>
+    <hr />
+    <table border="1">
+       
+        <caption >表格结构</caption>
+        <thead>
+            <tr>
+                <th>标签</th>
+                <th>说明</th>
+            </tr>
+        </thead>
+        <tbody  align="center">
+            <tr>
+                <td >table</td>
+                <td >表格</td>
+            </tr>
+            <tr>
+                <td >caption</td>
+                <td >标题</td>
+            </tr>
+            <tr>
+                <td >thead</td>
+                <td >表头(语义划分)</td>
+            </tr>
+            <tr>
+                <td >tbody</td>
+                <td >表身(语义划分)</td>
+            </tr>
+            <tr>
+                <td >tfoot</td>
+                <td >表身(语义划分)</td>
+            </tr>
+            <tr>
+                <td >tr</td>
+                <td >行</td>
+            </tr>
+            <tr>
+                <td>th</td>
+                <td >表头单元格</td>
+            </tr>
+        </tbody>
+        <tfoot align="center">
+            <tr>
+                <td >td</td>
+                <td >表格单元格</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr />
+    <a href="ftp://192.168.0.128/" target="_blank"><img src="D:/风景.jpg" alt="风景" height="100"/></a><br />
+    <a href="ftp://192.168.0.128/" target="_blank" >FTP</a>
+        <a href="HtmlPage2.html">跳转到网页2</a>
+    <br />
+    <!--<form name="哈" action="mailto:1311921009@qq.com" method="post">-->
+        账号:<input type="text" value="" name="aa" id="user"/><br />
+        密码:<input type="password" value="" name="aa" id="user1"/><br />
+        确认:<input type="password" value="" name="aa" id="user2" /><br />
+        <input type="submit" value="提交" onclick="return eg.regCheck();"/><br />
+        性别:<input type="radio" name="男" value="男" />男 <input type="radio" name="男" value="女" />女<br />
+        <select multiple="multiple" size="4">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>Ajax</option>
+            <option>Ajax</option>
+            <option>Ajax</option>
+        </select>
+        
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select>
+    </form>
+   <!--插入音乐<embed src="E:/KuGou/Alan Walker - Sing Me to Sleep.flac" width="400px" height="100px" hidden="false" loop="false"/>-->
+   <!--插入视频 <embed src="D:/Java算法视频/aa.wmv" width="400px" height="80px"/>--> 
+    <iframe src="HtmlPage2.html"width="1000px"></iframe>
+    <hr />
+    <div class="dvi1">
+        <div class="div2">1</div>
+        <div class="div2">1</div>
+        <div class="div2">1</div>
+        <div class="div2">1</div>
+        <div class="div2">1</div>
+    </div>
+    
+      
+</body>
+</html>
